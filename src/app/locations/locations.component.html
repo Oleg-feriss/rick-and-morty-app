@@ -1,0 +1,22 @@
+<section class="locations-section">
+  <form class="filter-inputs" [formGroup]="formGroup">
+    <app-input
+      label="Name"
+      [formGroup]="formGroup"
+      controlName="name"
+    ></app-input>
+    <app-input
+      label="Type"
+      [formGroup]="formGroup"
+      controlName="type"
+    ></app-input>
+    <app-input
+      label="Dimension"
+      [formGroup]="formGroup"
+      controlName="dimension"
+    ></app-input>
+  </form>
+  <div class="locations-table-container">
+    <app-locations-table [formGroup]="formGroup"></app-locations-table>
+  </div>
+</section>

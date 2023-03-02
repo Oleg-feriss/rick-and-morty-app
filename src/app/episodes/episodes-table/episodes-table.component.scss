@@ -1,0 +1,14 @@
+@use 'src/assets/styles/abstracts/abstracts';
+@use 'src/assets/styles/mixins';
+
+.mat-paginator {
+  @include mixins.table;
+}
+
+.filter-notification-container {
+  @include mixins.filter-notification-container;
+
+  .filter-notification {
+    @include mixins.filter-notification;
+  }
+}

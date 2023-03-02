@@ -1,0 +1,43 @@
+@use './abstracts/abstracts';
+
+@mixin table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 5em;
+  margin-inline: auto;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 2em;
+  background-color: abstracts.$brown;
+  color: abstracts.$text-light;
+}
+
+@mixin filter-notification-container {
+  padding: 2em;
+  border-radius: 1em;
+  background-color: abstracts.$brown;
+}
+
+@mixin filter-notification {
+  margin: 0;
+  font-size: 20px;
+  color: abstracts.$green;
+}
+
+@mixin section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+
+@mixin filter-inputs-container {
+  display: flex;
+  gap: 5em; 
+  box-shadow: 0 4px 8px 0 rgba(9, 9, 9, 0.656);
+  border-radius: 2em;
+  padding-inline: 2em;
+  padding-block: 2em 1em;
+  background: abstracts.$pink;
+}

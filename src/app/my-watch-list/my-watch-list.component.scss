@@ -1,0 +1,17 @@
+@use 'src/assets/styles/mixins';
+
+.my-watch-list--section {
+  @include mixins.section;
+
+  .filter-inputs {
+    @include mixins.filter-inputs-container;
+
+    .mat-raised-button {
+      height: 3.5em;
+    }
+  }
+
+  .episodes-table-container {
+    margin-top: 5em;
+  }
+}

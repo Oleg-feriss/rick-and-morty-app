@@ -1,0 +1,15 @@
+@use 'src/assets/styles/abstracts/abstracts';
+
+.mat-header-cell, .mat-cell, .mat-footer-cell {
+  padding-right: 3em;
+  padding-block: 1em;
+  border-color: abstracts.$pink;
+}
+
+.mat-table {
+  background-color: abstracts.$transparent-brown;
+}
+
+.mat-header-cell {
+  color: abstracts.$green;
+}

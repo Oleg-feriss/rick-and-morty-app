@@ -1,0 +1,20 @@
+<section class="my-watch-list--section">
+  <form class="filter-inputs" [formGroup]="formGroup">
+    <app-input
+      label="Episode Name"
+      [formGroup]="formGroup"
+      controlName="episodeName"
+    ></app-input>
+    <button
+      mat-raised-button
+      color="accent"
+      [disabled]="inputValue.length < minNameLength"
+      (click)="onAddEpisode()"
+    >
+      ADD EPISODE
+    </button>
+  </form>
+  <div class="list-container">
+    <app-episodes-to-watch-list></app-episodes-to-watch-list>
+  </div>
+</section>

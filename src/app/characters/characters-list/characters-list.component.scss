@@ -1,0 +1,21 @@
+@use 'src/assets/styles/abstracts/abstracts';
+@use 'src/assets/styles/mixins';
+
+.character__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.mat-paginator {
+ @include mixins.table;
+ width: 50%;
+}
+
+.filter-notification-container {
+  @include mixins.filter-notification-container;
+
+  .filter-notification {
+    @include mixins.filter-notification;
+  }
+}

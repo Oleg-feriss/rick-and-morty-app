@@ -1,0 +1,22 @@
+<section class="characters-section">
+  <form class="filter-inputs" [formGroup]="formGroup">
+    <app-input
+      label="Species"
+      [formGroup]="formGroup"
+      controlName="species"
+    ></app-input>
+    <app-input
+      label="Status"
+      [formGroup]="formGroup"
+      controlName="status"
+    ></app-input>
+    <app-input
+      label="Gender"
+      [formGroup]="formGroup"
+      controlName="gender"
+    ></app-input>
+  </form>
+  <div class="characters-list-container">
+    <app-characters-list [formGroup]="formGroup"></app-characters-list>
+  </div>
+</section>

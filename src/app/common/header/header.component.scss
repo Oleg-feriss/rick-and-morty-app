@@ -1,0 +1,47 @@
+@use '../../../assets/styles/abstracts/abstracts';
+
+.main-header {
+  height: 5em;
+  background-color: abstracts.$transparent-header;
+
+  .header-icon-container {
+    margin-inline: 3em 5em;
+    width: 4em;
+    
+    .header-icon {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .header-navbar {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    margin-block: 0;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+
+    .active {
+      border: 2px solid abstracts.$text-light;
+      border-radius: 1em;
+      padding: 0.5em;
+      background-color: abstracts.$green;
+
+      .header-navbar-item-link{
+        color: abstracts.$purple;
+      }
+    }
+  
+    .header-navbar-item-link {
+      font-size: abstracts.$font-navigation-size;
+      text-decoration: none;
+      color: abstracts.$text-light;
+    }
+  }
+}

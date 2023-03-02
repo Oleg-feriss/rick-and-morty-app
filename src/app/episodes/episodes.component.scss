@@ -1,0 +1,13 @@
+@use 'src/assets/styles/mixins';
+
+.episodes-section {
+  @include mixins.section;
+
+  .filter-inputs {
+    @include mixins.filter-inputs-container;
+  }
+
+  .episodes-table-container {
+    margin-top: 5em;
+  }
+}

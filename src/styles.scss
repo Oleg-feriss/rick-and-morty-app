@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@use './assets/styles/abstracts/abstracts';
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  background: url(./assets/img/rick-and-morty-background.jpeg) no-repeat center center fixed; 
+  background-size: cover;
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: abstracts.$transparent-brown;
+}
+
+.mat-dialog-container {
+  background-color: abstracts.$no-transparent-brown;
+}
+
+app-episode-to-watch-item .mat-fab .mat-button-wrapper {
+  padding: 0;
+}

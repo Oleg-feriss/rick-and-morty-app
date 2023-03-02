@@ -1,0 +1,15 @@
+<div
+  *ngIf="!locationsCount; else locationsTable"
+  class="filter-notification-container"
+>
+  <p class="filter-notification">No results found!</p>
+</div>
+<ng-template #locationsTable>
+  <app-table [dataSource]="locations" [columns]="columns"></app-table>
+  <mat-paginator
+    [length]="locationsCount"
+    [pageSize]="20"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</ng-template>

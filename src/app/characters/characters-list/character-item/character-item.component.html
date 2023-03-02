@@ -1,0 +1,10 @@
+<mat-card class="character-card" (click)="onShowDetails()">
+  <mat-card-header>
+    <div
+      mat-card-avatar
+      style="background: url('{{ character.image }}'); background-size: cover;"
+    ></div>
+    <mat-card-title>{{ character.name }}</mat-card-title>
+    <mat-card-subtitle>{{ character.species }}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

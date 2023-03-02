@@ -1,0 +1,10 @@
+<li class="episode-to-watch--item">
+  <h2 class="episode-to-watch--name">{{ episodeToWatch.name }}</h2>
+  <mat-checkbox
+    [checked]="episodeToWatch.isChecked"
+    (change)="onChange($event)"
+  ></mat-checkbox>
+  <button mat-fab color="warn" (click)="onDelete()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</li>

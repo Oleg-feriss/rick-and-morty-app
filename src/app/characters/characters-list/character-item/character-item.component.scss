@@ -1,0 +1,19 @@
+@use '../../../../assets/styles/abstracts/abstracts';
+
+.character-card {
+  cursor: pointer;
+  background: abstracts.$brown;
+
+  .mat-card-avatar {
+    height: 5em;
+    width: 5em;
+  }
+  
+  .mat-card-header .mat-card-title {
+    margin-top: 0.5em;
+  }
+  
+  .mat-card-header .mat-card-subtitle:not(:first-child) {
+    margin: 0;
+  }
+}

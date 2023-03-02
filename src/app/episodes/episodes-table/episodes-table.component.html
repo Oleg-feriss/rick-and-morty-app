@@ -1,0 +1,15 @@
+<div
+  *ngIf="!episodesCount; else episodesTable"
+  class="filter-notification-container"
+>
+  <p class="filter-notification">No results found!</p>
+</div>
+<ng-template #episodesTable>
+  <app-table [dataSource]="episodes" [columns]="columns"></app-table>
+  <mat-paginator
+    [length]="episodesCount"
+    [pageSize]="20"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</ng-template>

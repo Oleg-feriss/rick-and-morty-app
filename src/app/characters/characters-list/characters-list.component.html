@@ -1,0 +1,20 @@
+<div
+  *ngIf="!charactersCount; else charactersList"
+  class="filter-notification-container"
+>
+  <p class="filter-notification">No results found!</p>
+</div>
+<ng-template #charactersList>
+  <div class="character__container">
+    <app-character-item
+      *ngFor="let characterItem of characters"
+      [character]="characterItem"
+    ></app-character-item>
+  </div>
+  <mat-paginator
+    [length]="charactersCount"
+    [pageSize]="20"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</ng-template>

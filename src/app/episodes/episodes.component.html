@@ -1,0 +1,12 @@
+<section class="episodes-section">
+  <form class="filter-inputs" [formGroup]="formGroup">
+    <app-input
+      label="Name"
+      [formGroup]="formGroup"
+      controlName="name"
+    ></app-input>
+  </form>
+  <div class="episodes-table-container">
+    <app-episodes-table [formGroup]="formGroup"></app-episodes-table>
+  </div>
+</section>

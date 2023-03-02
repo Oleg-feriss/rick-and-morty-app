@@ -1,0 +1,26 @@
+<div class="detail-dialog-container">
+  <h2 mat-dialog-title>{{ data.name }}</h2>
+  <img [src]="data.image" [alt]="data.name" class="dialog-image" />
+  <div mat-dialog-content>
+    <div class="describe-container">
+      <h3 class="content-title">Status:</h3>
+      <p>{{ data.status }}</p>
+    </div>
+    <div *ngIf="data.type" class="describe-container">
+      <h3 class="content-title">Type:</h3>
+      <p>{{ data.type }}</p>
+    </div>
+    <div class="describe-container">
+      <h3 class="content-title">Gender:</h3>
+      <p>{{ data.gender }}</p>
+    </div>
+    <div class="describe-container">
+      <h3 class="content-title">Origin:</h3>
+      <p>{{ data.origin.name }}</p>
+    </div>
+    <div class="describe-container">
+      <h3 class="content-title">Location:</h3>
+      <p>{{ data.location.name }}</p>
+    </div>
+  </div>
+</div>

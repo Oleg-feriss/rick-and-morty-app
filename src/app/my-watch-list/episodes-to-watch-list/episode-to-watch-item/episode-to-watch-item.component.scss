@@ -1,0 +1,24 @@
+@use 'src/assets/styles/abstracts/abstracts';
+
+.episode-to-watch--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 35em;
+  padding-inline: 2em;
+  padding-block: 1em;
+  border-radius: 3em;
+  background: abstracts.$brown;
+
+  .episode-to-watch--name {
+    margin: 0;
+    margin-right: auto;
+    color: abstracts.$text-light;
+  }
+
+  .mat-fab {
+    width: 3em;
+    height: 3em;
+  }
+}

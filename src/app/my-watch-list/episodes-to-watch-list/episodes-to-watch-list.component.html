@@ -1,0 +1,8 @@
+<ul class="episodes-to-watch--list">
+  <app-episode-to-watch-item
+    *ngFor="let episodeItem of episodesToWatch"
+    [episodeToWatch]="episodeItem"
+    (checked)="toggleCheckStatus($event)"
+    (delete)="delete($event)"
+  ></app-episode-to-watch-item>
+</ul>

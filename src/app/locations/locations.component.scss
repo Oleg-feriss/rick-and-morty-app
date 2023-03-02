@@ -1,0 +1,13 @@
+@use 'src/assets/styles/mixins';
+
+.locations-section {
+  @include mixins.section;
+
+  .filter-inputs {
+    @include mixins.filter-inputs-container;
+  }
+
+  .locations-table-container {
+    margin-top: 5em;
+  }
+}

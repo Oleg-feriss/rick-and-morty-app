@@ -1,0 +1,14 @@
+@use 'src/assets/styles/abstracts/abstracts';
+@use 'src/assets/styles/mixins';
+
+.characters-section {
+  @include mixins.section;
+
+  .filter-inputs {
+    @include mixins.filter-inputs-container;
+  }
+
+  .characters-list-container {
+    margin-top: 5em;
+  }
+}

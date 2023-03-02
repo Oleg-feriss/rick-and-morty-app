@@ -1,0 +1,16 @@
+.input-container {
+  width: 20em;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0.5em;
+      margin: auto 0;
+      width: 1em;
+      height: 1em;
+      background: url('../../../assets/img/magnifying-glass.svg') no-repeat;
+      background-size: cover;
+    }
+}
