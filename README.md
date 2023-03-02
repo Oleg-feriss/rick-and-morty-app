@@ -1,3 +1,3 @@
 # rick-and-morty-app
-npm install
+npm install <br />
 ng serve
